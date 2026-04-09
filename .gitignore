@@ -1,0 +1,19 @@
+# Environments
+venv/
+.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# IDEs
+.vscode/
+.idea/
+
+# Output files - Ignore generated images but keep the folder structure
+assets/*.png
+!assets/.gitkeep
+
+QR-CodeGenerator.py
