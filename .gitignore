@@ -1,19 +1,40 @@
-# Environments
+# Environments & Packages
 venv/
+node_modules/
 .env
 
+# Bun/Node artifacts
+bun.lockb
+dist/
+
 # Python artifacts
-__pycache__/
+**/__pycache__/
 *.py[cod]
-*.pyo
+*$py.class
 *.pyd
 
-# IDEs
-.vscode/
-.idea/
+# Models & Large Data
+# Ignoring the raw Keras model and the compiled OpenVINO binaries
+models/qr_quality_model.keras
+models/openvino_model/
 
-# Output files - Ignore generated images but keep the folder structure
+# Dataset
+# Usually better to host datasets separately, keeping the folder structure only
+dataset/0/*
+dataset/1/*
+!dataset/**/.gitkeep
+
+# Assets
+# Ignore generated QR images but keep the assets folder
 assets/*.png
 !assets/.gitkeep
 
+# IDEs & System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Specific ignore as requested
 QR-CodeGenerator.py
+NPU_Heartbeat.py

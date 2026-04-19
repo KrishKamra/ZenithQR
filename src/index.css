@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-deep: #0f172a;
+  --color-violet-neon: #8b5cf6;
+  --color-amber-warn: #f59e0b;
+  --color-lime-cyber: #bef264;
+}
+
+:root {
+  background-color: #0f172a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents 3D cards from causing horizontal scroll */
+}
